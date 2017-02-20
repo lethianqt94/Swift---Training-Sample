@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AlbumCell" rowHeight="458" id="KGk-i7-Jjw" customClass="AlbumCell" customModule="iOS_Training" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="321" height="458"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="321" height="457"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6df-sI-OBd" userLabel="Content View">
+                        <rect key="frame" x="0.0" y="0.0" width="321" height="457"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLd-hB-sSm">
+                                <rect key="frame" x="16" y="13" width="289" height="52"/>
+                                <string key="text">Astonishingly exotic and utterly compelling, Vietnam is a country of ... about the culture and customs of other people is one of the great experiences.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14.5"/>
+                                <color key="textColor" red="0.34509803921568627" green="0.34509803921568627" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#Travel   #Culture" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysa-qH-K2s">
+                                <rect key="frame" x="16" y="76" width="289" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14.5"/>
+                                <color key="textColor" red="0.29803921568627451" green="0.68627450980392157" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ygG-LI-1VG" userLabel="ImageView" customClass="PhotoView" customModule="iOS_Training" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="136" width="321" height="321"/>
+                                <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ygG-LI-1VG" secondAttribute="height" multiplier="1:1" id="FT1-vg-VCJ"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pno-tw-hUs">
+                                <rect key="frame" x="16" y="104" width="289" height="22"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14.5"/>
+                                <state key="normal" title="  Add location" image="ic_location_selected.png">
+                                    <color key="titleColor" red="0.71372549019607845" green="0.71372549019607845" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="MLd-hB-sSm" secondAttribute="trailing" constant="16" id="6TM-DB-o5h"/>
+                            <constraint firstItem="MLd-hB-sSm" firstAttribute="top" secondItem="6df-sI-OBd" secondAttribute="top" constant="13" id="6ge-YF-bwU"/>
+                            <constraint firstItem="ygG-LI-1VG" firstAttribute="leading" secondItem="6df-sI-OBd" secondAttribute="leading" id="78c-Zg-XGd"/>
+                            <constraint firstItem="ysa-qH-K2s" firstAttribute="leading" secondItem="6df-sI-OBd" secondAttribute="leading" constant="16" id="8od-Ab-Zle"/>
+                            <constraint firstItem="MLd-hB-sSm" firstAttribute="leading" secondItem="6df-sI-OBd" secondAttribute="leading" constant="16" id="DTm-Im-XXT"/>
+                            <constraint firstItem="ysa-qH-K2s" firstAttribute="top" secondItem="MLd-hB-sSm" secondAttribute="bottom" constant="11" id="MHx-KK-IiF"/>
+                            <constraint firstAttribute="trailing" secondItem="Pno-tw-hUs" secondAttribute="trailing" constant="16" id="RHH-sd-yAw"/>
+                            <constraint firstAttribute="bottom" secondItem="ygG-LI-1VG" secondAttribute="bottom" id="U4a-X4-qhN"/>
+                            <constraint firstItem="Pno-tw-hUs" firstAttribute="leading" secondItem="6df-sI-OBd" secondAttribute="leading" constant="16" id="ZNK-AH-KP6"/>
+                            <constraint firstItem="ygG-LI-1VG" firstAttribute="top" secondItem="Pno-tw-hUs" secondAttribute="bottom" constant="10" id="cmd-Tv-9Ee"/>
+                            <constraint firstItem="Pno-tw-hUs" firstAttribute="top" secondItem="ysa-qH-K2s" secondAttribute="bottom" constant="10" id="jSj-7Q-yx7"/>
+                            <constraint firstAttribute="trailing" secondItem="ysa-qH-K2s" secondAttribute="trailing" constant="16" id="qpj-JE-44Y"/>
+                            <constraint firstAttribute="trailing" secondItem="ygG-LI-1VG" secondAttribute="trailing" id="uNS-0Y-GOP"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="6df-sI-OBd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="4wo-n4-MLf"/>
+                    <constraint firstAttribute="trailing" secondItem="6df-sI-OBd" secondAttribute="trailing" id="mNh-cO-0kd"/>
+                    <constraint firstAttribute="bottom" secondItem="6df-sI-OBd" secondAttribute="bottom" id="pth-d2-0pI"/>
+                    <constraint firstItem="6df-sI-OBd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="usl-uo-8q8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imagesView" destination="ygG-LI-1VG" id="47W-JQ-tZx"/>
+                <outlet property="lblAlbumCategory" destination="ysa-qH-K2s" id="dsA-Ne-80c"/>
+                <outlet property="lblAlbumDesc" destination="MLd-hB-sSm" id="LbL-gd-Xex"/>
+                <outlet property="lblLocation" destination="Pno-tw-hUs" id="zuB-UM-MZ2"/>
+            </connections>
+            <point key="canvasLocation" x="328.5" y="298"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_location_selected.png" width="12" height="15"/>
+    </resources>
+</document>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TopicResourceCell" id="gTV-IL-0wX" customClass="TopicResourceCell" customModule="iOS_Training" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="98" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="98" height="65"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_no_coverphoto.png" translatesAutoresizingMaskIntoConstraints="NO" id="MZ9-vg-tiX">
+                        <rect key="frame" x="0.0" y="0.0" width="98" height="65"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_mask_collection.png" translatesAutoresizingMaskIntoConstraints="NO" id="0X1-6G-MFH">
+                        <rect key="frame" x="0.0" y="0.0" width="98" height="65"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Con-kh-gdL">
+                        <rect key="frame" x="9" y="25" width="46" height="22"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SU3-Ok-8KJ">
+                        <rect key="frame" x="9" y="47" width="27" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="SU3-Ok-8KJ" firstAttribute="top" secondItem="Con-kh-gdL" secondAttribute="bottom" id="0GZ-rc-z6U"/>
+                <constraint firstItem="Con-kh-gdL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="9" id="5ah-4F-sUb"/>
+                <constraint firstItem="0X1-6G-MFH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="970-Sx-HbP"/>
+                <constraint firstItem="0X1-6G-MFH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="E6l-xU-aC0"/>
+                <constraint firstItem="MZ9-vg-tiX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="KSK-3f-1Sl"/>
+                <constraint firstAttribute="bottom" secondItem="0X1-6G-MFH" secondAttribute="bottom" id="T81-Dd-L56"/>
+                <constraint firstItem="SU3-Ok-8KJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="9" id="Y6Y-ur-xse"/>
+                <constraint firstAttribute="trailing" secondItem="MZ9-vg-tiX" secondAttribute="trailing" id="iVb-C2-0MY"/>
+                <constraint firstAttribute="bottom" secondItem="SU3-Ok-8KJ" secondAttribute="bottom" constant="6" id="jyu-bC-Y4e"/>
+                <constraint firstAttribute="trailing" secondItem="0X1-6G-MFH" secondAttribute="trailing" id="lJh-vu-dDk"/>
+                <constraint firstItem="MZ9-vg-tiX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="mFR-hU-NxN"/>
+                <constraint firstAttribute="bottom" secondItem="MZ9-vg-tiX" secondAttribute="bottom" id="zdh-1n-8D7"/>
+            </constraints>
+            <size key="customSize" width="176" height="82"/>
+            <connections>
+                <outlet property="imvMask" destination="0X1-6G-MFH" id="aFn-fe-zE4"/>
+                <outlet property="imvResourceCover" destination="MZ9-vg-tiX" id="2z9-rD-fDS"/>
+                <outlet property="lblStatName" destination="SU3-Ok-8KJ" id="6M3-pK-HG7"/>
+                <outlet property="lblStatNumber" destination="Con-kh-gdL" id="r2e-sd-prv"/>
+            </connections>
+            <point key="canvasLocation" x="295" y="277"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="img_mask_collection.png" width="98" height="65"/>
+        <image name="img_no_coverphoto.png" width="191" height="42"/>
+    </resources>
+</document>
